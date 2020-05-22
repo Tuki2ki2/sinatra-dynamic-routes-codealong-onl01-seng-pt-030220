@@ -21,7 +21,7 @@ class App < Sinatra::Base
   get '/multiply/:number1/:number2' do
   a.to_i = params[:number1]
   b.to_i = parans[:number2]
-  total.to_s = a * b
+  @total.to_s = a * b
   "#{@total}"
   end
 
